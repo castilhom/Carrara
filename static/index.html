@@ -13,7 +13,7 @@
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
 	<title>Carrara Empréstimos</title>
-
+	
 	<link href="css/app.css" rel="stylesheet">
 </head>
 
@@ -197,6 +197,18 @@
 								</div>
 							</div>
 						</li>
+						
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle"  href="#cadastro" data-toggle="modal">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="plus"></i>
+						
+	
+							</div>
+						</li>
+						
 						<li class="nav-item dropdown">
 							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
 								data-toggle="dropdown">
@@ -356,6 +368,31 @@
 			</main>
 
 			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				
 				<div class="modal fade" id="defaultModalPrimary" tabindex="-1" role="dialog" aria-hidden="true">
 					<div class="modal-dialog" role="document">
@@ -379,6 +416,44 @@
 					</div>
 				</div>
 				<!-- END primary modal -->
+				<div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Informações do Empréstimo</h5>
+								<button type="button" class="btn-close" data-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body m-3">
+								<form>
+									<div class="row">
+										<div class="col-md-8">
+											<div class="mb-3">
+												<label class="form-label" for="inputUsername">Nome</label>
+												<input type="text" class="form-control" id="nome" placeholder="Beiçola da Pastelaria">
+											</div>
+											<div class="mb-3">
+												<label class="form-label" for="inputUsername">Valor</label>
+												<input type="text" class="form-control" id="valor" placeholder="R$">
+											</div>
+											
+											<div class="mb-3">
+												<label class="form-label" for="inputUsername">Data</label>
+												<input type="date" class="form-control" id="data" placeholder="00/00/0000">
+											</div>
+											
+									
+									<button type="submit" class="btn btn-primary">Salvar</button>
+								</form>
+
+				
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			
 			</footer>
 		</div>
 	</div>
